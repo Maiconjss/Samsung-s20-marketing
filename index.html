@@ -1,108 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Get Your Book</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>maratona dev desenvolvimento</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <img class="logo" src="img/Samsung_Galaxy_logo.svg.png" alt="">
-        <h2> Galaxy S20</h2>
-        <p> Reserve já o seu e fique por dentro das novidades.</p>
-        <p> Lançamento em: </p>
-        <p id="time">
-
-            <BODY onload=startCountdown()>
-                <SCRIPT language=JavaScript>
-                    var g_iCount = new Number();
-
-                    // de 30 a 0 //
-                    var g_iCount = 30;
-
-                    function startCountdown() {
-                        if ((g_iCount - 1) >= 0) {
-                            g_iCount = g_iCount - 1;
-                            numberCountdown.innerText = '00:00.0' + g_iCount;
-                            setTimeout('startCountdown()', 1000);
-                        }
-                    }
-                </SCRIPT>
-                <FONT face=verdana color=#000 size=2><B>
-                        <DIV id=numberCountdown align=center></DIV>
-                </FONT>
-                </div>
-        </p>
-
-        <button>Quero já o meu</button>
+      <img class="logo" src="img/hobbies-and-free-time.svg" alt="" />
+      <h2>Resgate seu Ebook</h2>
+      <p>Reserve já o seu e fique por dentro das novidades.</p>
+      <button>Quero já o meu</button>
     </header>
 
     <section class="form hide">
-        <h2>Entre na lista de doadores</h2>
-        <form action="/" method="/">
-            <input type="text" name="name" placeholder="Nome">
-            <input type="text" name="email" placeholder="Email">
-            <input type="text" name="blood" placeholder="Telefone">
-            <button>Enviar</button>
-        </form>
+      <form action="/" method="/">
+        <input type="text" name="name" placeholder="Nome" />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="text" name="blood" placeholder="Telefone" />
+        <button>Enviar</button>
+      </form>
     </section>
 
+    <script src="js/script.js"></script>
 
-
-    <main>
-        <h2>Prepare-se, o <span> Futuro</span> chegou.</h2>
-
-        <section class="donors">
-
-
-
-
-            <div class="donor">
-                <div class="blood"></div>
-                <!--AQUI POSSO POR NOMES-->
-                <P></P>
-            </div>
-
-
-
-        </section>
-    </main>
-    <script src="script.js"></script>
-
-    <footer>
-        Maicon Douglas- Maratona dev
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
